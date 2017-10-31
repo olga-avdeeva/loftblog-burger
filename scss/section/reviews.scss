@@ -1,0 +1,55 @@
+.reviews__list{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.reviews__item {
+  width: 25%;
+  height: 50%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+}
+
+
+.reviews__img{
+  width: 100%;
+}
+
+.reviews-desc{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 45px 19px;
+  opacity: 0;
+
+  &:hover{
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.6);
+  }
+}
+
+.reviews-desc__title{
+  font-family: "Gagalin";
+  font-size: 14px;
+  color: $white;
+}
+
+.reviews-desc__text{
+  color: $white;
+  font-weight: 300;
+}
+
+.reviews-desc__link{
+  min-width: 110px;
+  background-color: $gray;
+
+  &:hover {
+    background-color: darken($gray, 7%);
+  }
+}
