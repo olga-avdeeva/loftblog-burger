@@ -36,17 +36,22 @@
 }
 
 .team-acco__content{
- /* height: 0;
-  overflow: hidden;*/
+
+  height: 0;
+  overflow: hidden;
 }
 
 .team-acco__content{
-
-  display: none;
+  //display: none;
 }
 
 .team-acco__text{
   color: $white;
+  width: 50%;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .team-acco__item_active{
@@ -59,6 +64,17 @@
 
     }
   .team-acco__content{
-    display: block;
+    display: flex;
+    margin: 10px 0;
+    height: 100%;
   }
+}
+
+.team-acco__pic{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
