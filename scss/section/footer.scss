@@ -24,12 +24,16 @@
 .contacts__number{
   display: flex;
   flex-direction: row;
+  align-items: center;
   color: $orange;
 
 }
 
 .contacts__number-img{
-  margin-right: 10px;
+  width: 11px;
+  height: 11px;
+  fill: $orange;
+  margin-right: 8px;
 }
 
 .social__list{

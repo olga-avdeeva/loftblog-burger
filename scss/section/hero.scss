@@ -29,6 +29,11 @@ background: url('../img/bg/bg_hero.jpg') center center no-repeat;
   margin-left: auto;
 }
 
+/*.logo__img{
+  width: 92px;
+  height: 70px;
+}*/
+
 .nav__list{
   display: flex;
 }
@@ -87,4 +92,16 @@ background: url('../img/bg/bg_hero.jpg') center center no-repeat;
   justify-content: center;
   align-items: center;
   margin-bottom: 10px;
+}
+
+.arrow-link__img{
+  width: 34px;
+  height:21px;
+  fill: $white;
+  transition: .3s;
+
+  &:hover{
+    fill: $gray;
+
+  }
 }
