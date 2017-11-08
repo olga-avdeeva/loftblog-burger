@@ -20,10 +20,9 @@
         <section class="section hero">
             <div class="container hero__container">
                 <header class="header">
-                    <div class="header__logo">
                         <a class="logo" href="#">
                             <img class="logo__img" src="img/icons/logo.svg" alt="logo">
-                        </a></div>
+                        </a>
                     <div class="header__menu">
                         <nav class="nav">
                             <ul class="nav__list">
@@ -41,9 +40,9 @@
                                 </li>
                             </ul>
                         </nav>
-                    </div>
-                    <div class="header__btn">
-                        <a class="order-link" href="#" data-goto="6">Заказать</a>
+                        <div class="header__btn">
+                            <a class="order-link" href="#" data-goto="6">Заказать</a>
+                        </div>
                     </div>
                 </header>
                 <div class="hero__content">
@@ -51,66 +50,176 @@
                         <img src="img/section_hero/steam.png" alt="drops">
                     </div>
                     <div class="hero__description">
-                        <h2 class="section__title">Мы делаем</h2>
+                        <h2 class="section__title">Мы  делаем</h2>
                         <div class="hero__description-text">натуральные бургеры</div>
                     </div>
                 </div>
-                <div class="hero__footer footer">
-                    <div class="footer__arrow">
-                        <a href="" class="arrow-link">
-                            <img src="img/icons/arrow-scroll.svg" alt="" class="arrow-link__img">
-                        </a>
-                    </div>
+                <div class="arrow-down">
+                    <a href="#" class="arrow-link">
+                        <img src="img/icons/arrow-scroll.svg" alt="" class="arrow-link__img">
+                    </a>
                 </div>
             </div>
         </section>
-        <section class="section best">
-            <div class="container">
-                <h2 class="section__title section__title--best">Мы лучшие</h2>
+
+        <section class="section best section_centered">
+            <div class="container best__container">
+                <h2 class="section__title section__title_color_gray section__title_position_center">Мы лучшие</h2>
                 <ul class="best__list">
                     <li class="best__item">
-                        <img src="img/icons/meat.svg" alt="" class="best__img">
-                        <span class="best__title">100% свежее мясо</span>
-                        <p class="best__text">
-                            Драма представляет собой деструктивный цикл.
-                            Анапест представляет собой анапест.
-                            Ямб неравномерен.
-                        </p>
+                        <div class="best__icon">
+                            <svg class="best__icon-pic">
+                                <use xlink:href="./img/icons/sprite.svg#meat"></use>
+                            </svg>
+                        </div>
+                        <div class="best__content">
+                            <div class="best__title">100% свежее мясо</div>
+                            <div class="best__text">
+                                <p>
+                                    Драма представляет собой деструктивный цикл.
+                                    Анапест представляет собой анапест.
+                                    Ямб неравномерен.
+                                </p>
+                            </div>
+                        </div>
                     </li>
                     <li class="best__item">
-                        <img src="img/icons/hand.svg" alt="" class="best__img">
-                        <span class="best__title">Ручная сборка</span>
-                        <p class="best__text">
-                            Драма представляет собой деструктивный цикл.
-                            Анапест представляет собой анапест.
-                            Первое полустишие притягивает сюжетный реформаторский пафос.
-                        </p>
+                        <div class="best__icon">
+                            <svg class="best__icon-pic best__icon-pic_yellow">
+                                <use xlink:href="./img/icons/sprite.svg#hand"></use>
+                            </svg>
+                        </div>
+                        <div class="best__content">
+                            <div class="best__title">Ручная сборка</div>
+                            <div class="best__text">
+                                <p>
+                                    Драма представляет собой деструктивный цикл.
+                                    Анапест представляет собой анапест.
+                                    Ямб неравномерен.
+                                    Драма представляет собой деструктивный цикл.
+                                    Анапест представляет собой анапест.
+                                    Ямб неравномерен.
+                                </p>
+                            </div>
+                        </div>
                     </li>
                     <li class="best__item">
-                        <img src="img/icons/natural.svg" alt="" class="best__img">
-                        <span class="best__title">Натуральные ингредиенты</span>
-                        <p class="best__text">
-                            Драма представляет собой деструктивный цикл.
-                            Анапест представляет собой анапест.
-                        </p>
+                        <div class="best__icon">
+                            <svg class="best__icon-pic best__icon-pic_green">
+                                <use xlink:href="./img/icons/sprite.svg#natural"></use>
+                            </svg>
+                        </div>
+                        <div class="best__content">
+                            <div class="best__title">Натуральные ингредиенты</div>
+                            <div class="best__text">
+                                <p>
+                                    Драма представляет собой деструктивный цикл.
+                                    Анапест представляет собой анапест.
+                                    Ямб неравномерен.
+                                </p>
+                            </div>
+                        </div>
                     </li>
+
                 </ul>
             </div>
         </section>
+
+        <section class="section"></section>
+
+        <section class="section team">
+            <div class="team__container">
+              <div class="team__content">
+                  <div class="section__title">
+                      Команда
+                  </div>
+                  <ul class="team-acco">
+                      <li class="team-acco__item">
+                          <a href="" class="team-acco__trigger">Дэниель Рэдклифф</a>
+                          <div class="team-acco__content">
+                            <div class="team-acco__pic">
+                                <img src="img/section_team/aphex.jpg" alt="" class="team-acco__pic-img">
+                            </div>
+                              <div class="team-acco__text">
+                                  <div class="team-acco__text-title">
+                                      Оператор
+                                  </div>
+                                  <div class="team-acco__text-content">
+                                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi architecto at atque blanditiis ducimus libero nemo recusandae sed voluptatibus voluptatum.</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </li>
+                      <li class="team-acco__item">
+                          <a href="" class="team-acco__trigger">Дэниель Рэдклифф</a>
+                          <div class="team-acco__content">
+                              <div class="team-acco__pic">
+                                  <img src="img/section_team/aphex.jpg" alt="" class="team-acco__pic-img">
+                              </div>
+                              <div class="team-acco__text">
+                                  <div class="team-acco__text-title">
+                                      Оператор
+                                  </div>
+                                  <div class="team-acco__text-content">
+                                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi architecto at atque blanditiis ducimus libero nemo recusandae sed voluptatibus voluptatum.</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </li>
+                      <li class="team-acco__item">
+                          <a href="" class="team-acco__trigger">Дэниель Рэдклифф</a>
+                          <div class="team-acco__content">
+                              <div class="team-acco__pic">
+                                  <img src="img/section_team/aphex.jpg" alt="" class="team-acco__pic-img">
+                              </div>
+                              <div class="team-acco__text">
+                                  <div class="team-acco__text-title">
+                                      Оператор
+                                  </div>
+                                  <div class="team-acco__text-content">
+                                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi architecto at atque blanditiis ducimus libero nemo recusandae sed voluptatibus voluptatum.</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </li>
+                      <li class="team-acco__item team-acco__item_active">
+                          <a href="" class="team-acco__trigger">Дэниель Рэдклифф</a>
+                          <div class="team-acco__content">
+                              <div class="team-acco__pic">
+                                  <img src="img/section_team/aphex.jpg" alt="" class="team-acco__pic-img">
+                              </div>
+                              <div class="team-acco__text">
+                                  <div class="team-acco__text-title">
+                                      Оператор
+                                  </div>
+                                  <div class="team-acco__text-content">
+                                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi architecto at atque blanditiis ducimus libero nemo recusandae sed voluptatibus voluptatum.</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </li>
+                  </ul>
+              </div>
+            </div>
+        </section>
+
         <section class="section reviews">
+            <div class="section__title visuallyhidden">Отзывы</div>
             <ul class="reviews__list">
                 <li class="reviews__item"
                     style="background-image: url('img/section_reviews/photo-1color.jpg');">
                     <img src="img/section_reviews/photo-1color.jpg" alt="" class=" reviews__img visuallyhidden ">
                     <div class="reviews-desc">
-                        <span class="reviews-desc__title">
+                        <div class="reviews-desc__title">
                            Константин Спилберг
-                        </span>
-                        <p class="reviews-desc__text">
-                            Мысли все о них и о них, о них и о них.
-                            Нельзя устоять, невозможно забыть...
-                            Никогда не думал, что булочки могут быть такими мягкими, котлетка
-                        </p>
+                        </div>
+                        <div class="reviews-desc__text">
+                            <p>
+                                Мысли все о них и о них, о них и о них.
+                                Нельзя устоять, невозможно забыть...
+                                Никогда не думал, что булочки могут быть такими мягкими, котлетка
+                            </p>
+                        </div>
                         <div class="rewiews-desc__btn">
                             <a href="" class="order-link reviews-desc__link">
                                 Подробнее
@@ -120,16 +229,18 @@
                 </li>
                 <li class="reviews__item"
                     style="background-image: url('img/section_reviews/photo-2color.jpg');">
-                    <img src="img/section_reviews/photo-1color.jpg" alt="" class=" reviews__img visuallyhidden ">
+                    <img src="img/section_reviews/photo-2color.jpg" alt="" class=" reviews__img visuallyhidden ">
                     <div class="reviews-desc">
-                        <span class="reviews-desc__title">
-                           Константин Спилберг
-                        </span>
-                        <p class="reviews-desc__text">
-                            Мысли все о них и о них, о них и о них.
-                            Нельзя устоять, невозможно забыть...
-                            Никогда не думал, что булочки могут быть такими мягкими, котлетка
-                        </p>
+                        <div class="reviews-desc__title">
+                            Константин Спилберг
+                        </div>
+                        <div class="reviews-desc__text">
+                            <p>
+                                Мысли все о них и о них, о них и о них.
+                                Нельзя устоять, невозможно забыть...
+                                Никогда не думал, что булочки могут быть такими мягкими, котлетка
+                            </p>
+                        </div>
                         <div class="rewiews-desc__btn">
                             <a href="" class="order-link reviews-desc__link">
                                 Подробнее
@@ -139,16 +250,18 @@
                 </li>
                 <li class="reviews__item"
                     style="background-image: url('img/section_reviews/photo-3color.jpg');">
-                    <img src="img/section_reviews/photo-1color.jpg" alt="" class=" reviews__img visuallyhidden ">
+                    <img src="img/section_reviews/photo-3color.jpg" alt="" class=" reviews__img visuallyhidden ">
                     <div class="reviews-desc">
-                        <span class="reviews-desc__title">
-                           Константин Спилберг
-                        </span>
-                        <p class="reviews-desc__text">
-                            Мысли все о них и о них, о них и о них.
-                            Нельзя устоять, невозможно забыть...
-                            Никогда не думал, что булочки могут быть такими мягкими, котлетка
-                        </p>
+                        <div class="reviews-desc__title">
+                            Константин Спилберг
+                        </div>
+                        <div class="reviews-desc__text">
+                            <p>
+                                Мысли все о них и о них, о них и о них.
+                                Нельзя устоять, невозможно забыть...
+                                Никогда не думал, что булочки могут быть такими мягкими, котлетка
+                            </p>
+                        </div>
                         <div class="rewiews-desc__btn">
                             <a href="" class="order-link reviews-desc__link">
                                 Подробнее
@@ -157,17 +270,19 @@
                     </div>
                 </li>
                 <li class="reviews__item"
-                    style="background-image: url('img/section_reviews/photo-4color.jpg'); ">
-                    <img src="img/section_reviews/photo-1color.jpg" alt="" class=" reviews__img visuallyhidden ">
+                    style="background-image: url('img/section_reviews/photo-4color.jpg');">
+                    <img src="img/section_reviews/photo-4color.jpg" alt="" class=" reviews__img visuallyhidden ">
                     <div class="reviews-desc">
-                        <span class="reviews-desc__title">
-                           Константин Спилберг
-                        </span>
-                        <p class="reviews-desc__text">
-                            Мысли все о них и о них, о них и о них.
-                            Нельзя устоять, невозможно забыть...
-                            Никогда не думал, что булочки могут быть такими мягкими, котлетка
-                        </p>
+                        <div class="reviews-desc__title">
+                            Константин Спилберг
+                        </div>
+                        <div class="reviews-desc__text">
+                            <p>
+                                Мысли все о них и о них, о них и о них.
+                                Нельзя устоять, невозможно забыть...
+                                Никогда не думал, что булочки могут быть такими мягкими, котлетка
+                            </p>
+                        </div>
                         <div class="rewiews-desc__btn">
                             <a href="" class="order-link reviews-desc__link">
                                 Подробнее
@@ -177,16 +292,18 @@
                 </li>
                 <li class="reviews__item"
                     style="background-image: url('img/section_reviews/photo-5color.jpg');">
-                    <img src="img/section_reviews/photo-1color.jpg" alt="" class=" reviews__img visuallyhidden ">
+                    <img src="img/section_reviews/photo-5color.jpg" alt="" class=" reviews__img visuallyhidden ">
                     <div class="reviews-desc">
-                        <span class="reviews-desc__title">
-                           Константин Спилберг
-                        </span>
-                        <p class="reviews-desc__text">
-                            Мысли все о них и о них, о них и о них.
-                            Нельзя устоять, невозможно забыть...
-                            Никогда не думал, что булочки могут быть такими мягкими, котлетка
-                        </p>
+                        <div class="reviews-desc__title">
+                            Константин Спилберг
+                        </div>
+                        <div class="reviews-desc__text">
+                            <p>
+                                Мысли все о них и о них, о них и о них.
+                                Нельзя устоять, невозможно забыть...
+                                Никогда не думал, что булочки могут быть такими мягкими, котлетка
+                            </p>
+                        </div>
                         <div class="rewiews-desc__btn">
                             <a href="" class="order-link reviews-desc__link">
                                 Подробнее
@@ -195,17 +312,19 @@
                     </div>
                 </li>
                 <li class="reviews__item"
-                    style="background-image: url('img/section_reviews/photo-6color.jpg'); ">
-                    <img src="img/section_reviews/photo-1color.jpg" alt="" class=" reviews__img visuallyhidden ">
+                    style="background-image: url('img/section_reviews/photo-6color.jpg');">
+                    <img src="img/section_reviews/photo-6color.jpg" alt="" class=" reviews__img visuallyhidden ">
                     <div class="reviews-desc">
-                        <span class="reviews-desc__title">
-                           Константин Спилберг
-                        </span>
-                        <p class="reviews-desc__text">
-                            Мысли все о них и о них, о них и о них.
-                            Нельзя устоять, невозможно забыть...
-                            Никогда не думал, что булочки могут быть такими мягкими, котлетка
-                        </p>
+                        <div class="reviews-desc__title">
+                            Константин Спилберг
+                        </div>
+                        <div class="reviews-desc__text">
+                            <p>
+                                Мысли все о них и о них, о них и о них.
+                                Нельзя устоять, невозможно забыть...
+                                Никогда не думал, что булочки могут быть такими мягкими, котлетка
+                            </p>
+                        </div>
                         <div class="rewiews-desc__btn">
                             <a href="" class="order-link reviews-desc__link">
                                 Подробнее
@@ -214,17 +333,19 @@
                     </div>
                 </li>
                 <li class="reviews__item"
-                    style="background-image: url('img/section_reviews/photo-7color.jpg'); ">
-                    <img src="img/section_reviews/photo-1color.jpg" alt="" class=" reviews__img visuallyhidden ">
+                    style="background-image: url('img/section_reviews/photo-7color.jpg');">
+                    <img src="img/section_reviews/photo-7color.jpg" alt="" class=" reviews__img visuallyhidden ">
                     <div class="reviews-desc">
-                        <span class="reviews-desc__title">
-                           Константин Спилберг
-                        </span>
-                        <p class="reviews-desc__text">
-                            Мысли все о них и о них, о них и о них.
-                            Нельзя устоять, невозможно забыть...
-                            Никогда не думал, что булочки могут быть такими мягкими, котлетка
-                        </p>
+                        <div class="reviews-desc__title">
+                            Константин Спилберг
+                        </div>
+                        <div class="reviews-desc__text">
+                            <p>
+                                Мысли все о них и о них, о них и о них.
+                                Нельзя устоять, невозможно забыть...
+                                Никогда не думал, что булочки могут быть такими мягкими, котлетка
+                            </p>
+                        </div>
                         <div class="rewiews-desc__btn">
                             <a href="" class="order-link reviews-desc__link">
                                 Подробнее
@@ -233,17 +354,19 @@
                     </div>
                 </li>
                 <li class="reviews__item"
-                    style="background-image: url('img/section_reviews/photo-8color.jpg'); ">
-                    <img src="img/section_reviews/photo-1color.jpg" alt="" class=" reviews__img visuallyhidden ">
+                    style="background-image: url('img/section_reviews/photo-8color.jpg');">
+                    <img src="img/section_reviews/photo-8color.jpg" alt="" class=" reviews__img visuallyhidden ">
                     <div class="reviews-desc">
-                        <span class="reviews-desc__title">
-                           Константин Спилберг
-                        </span>
-                        <p class="reviews-desc__text">
-                            Мысли все о них и о них, о них и о них.
-                            Нельзя устоять, невозможно забыть...
-                            Никогда не думал, что булочки могут быть такими мягкими, котлетка
-                        </p>
+                        <div class="reviews-desc__title">
+                            Константин Спилберг
+                        </div>
+                        <div class="reviews-desc__text">
+                            <p>
+                                Мысли все о них и о них, о них и о них.
+                                Нельзя устоять, невозможно забыть...
+                                Никогда не думал, что булочки могут быть такими мягкими, котлетка
+                            </p>
+                        </div>
                         <div class="rewiews-desc__btn">
                             <a href="" class="order-link reviews-desc__link">
                                 Подробнее
@@ -253,7 +376,78 @@
                 </li>
             </ul>
         </section>
+
+        <section class="section"></section>
+
+        <section class="section"></section>
+
+        <section class="section map">
+            <div class="map__desc visuallyhidden">
+                <div class=" visuallyhidden ">
+                <div class="section__title">Карта проезда</div>
+                    <ul>
+                        <li>1. ул.Наследова, 16-7</li>
+                        <li>2. ул.Наследова, 16-7</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+        <footer class="footer">
+            <div class="container footer__container">
+                <address class="contacts">
+                    <div class="contacts__address">
+                        <p>Санкт-Петербург, ул. Бабушкина, д.12\1,15</p>
+                    </div>
+                    <div class="contacts__number">
+                        <img src="img/icons/phone.svg" alt="" class="contacts__number-img">
+                        <p>+7(812)377-13-77</p>
+                    </div>
+                </address>
+                <ul class="social__list">
+                    <li class="social__item">
+                        <a href="#" class="social__link">
+                            <svg class="social__img">
+                                <use xlink:href="./img/icons/sprite.svg#vk"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="#" class="social__link">
+                            <svg class="social__img">
+                                <use xlink:href="./img/icons/sprite.svg#fb"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="#" class="social__link">
+                            <svg class="social__img">
+                                <use xlink:href="./img/icons/sprite.svg#inst"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="#" class="social__link">
+                            <svg class="social__img">
+                                <use xlink:href="./img/icons/sprite.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </footer>
     </div>
+    <ul class="fixed-menu">
+<li class="fixed-menu__item"></li>
+<li class="fixed-menu__item"></li>
+<li class="fixed-menu__item"></li>
+<li class="fixed-menu__item"></li>
+<li class="fixed-menu__item"></li>
+<li class="fixed-menu__item"></li>
+<li class="fixed-menu__item"></li>
+<li class="fixed-menu__item"></li>
+</ul>
 </div>
 </body>
 </html>

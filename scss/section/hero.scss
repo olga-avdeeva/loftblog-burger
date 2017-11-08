@@ -1,48 +1,51 @@
-.hero {
-  background-image: url('../img/bg/bg_hero.jpg');
-  background-repeat: no-repeat;
-  background-position: 50%;
+/*hero header*/
+
+.hero{
+background: url('../img/bg/bg_hero.jpg') center center no-repeat;
   background-size: cover;
   position: relative;
-}
-
-.header {
-  width: 100%;
   display: flex;
+  flex-direction: column;
+}
+
+.hero__container{
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  margin-top: 12px;
+}
+
+.header__menu{
+  display: flex;
   align-items: center;
-  padding-top: 10px;
+  margin-left: auto;
 }
 
-.header__logo {
-  margin-right: auto;
-}
-
-.nav {
-  margin-right: rem(15px);
-}
-
-.nav__list {
-  margin: 0;
-  padding: 0;
+.nav__list{
+  display: flex;
 }
 
 .nav__item {
-  display: inline-block;
-  vertical-align: middle;
-  white-space: nowrap;
+  display: flex;
+  align-items: center;
   &:after {
-    display: inline-block;
-    vertical-align: middle;
+    display: block;
     content: ' ';
-    @include circle(5px, #fff);
-    margin: 0 12px;
+    @include circle(4px, #fff);
+    margin: 0 16px;
   }
   &:last-child:after {
     display: none;
   }
 }
-
 
 .nav__link {
   color: #ffffff;
@@ -59,43 +62,17 @@
   }
 }
 
-.hero__container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.header__btn{
+  margin: 0 16px;
 }
 
-.hero__content {
-  width: 100%;
+.hero__content{
   display: flex;
-  flex-wrap: wrap;
-  flex-grow: 1;
   align-items: center;
-  padding-bottom: 15%;
 }
-
 .hero__img, .hero__description {
-  flex-basis: 50%;
-  display: flex;
+  width: 50%;
 }
-
-.hero__description {
-  flex-direction: column;
-  justify-content: center;
-}
-
-.section__title {
-  color: $yellow;
-  font-family: 'Gagalin';
-  font-size: 72px;
-  font-weight: 400;
-  line-height: 1.42;
-  margin: 0;
-  padding-top: 60px;
-}
-
 .hero__description-text {
   color: $white;
   font-family: 'Lifehack';
@@ -104,11 +81,10 @@
   line-height: 1;
 }
 
-.footer{
-  width: 100%;
+.arrow-down{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }

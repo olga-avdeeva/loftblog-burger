@@ -1,27 +1,56 @@
+body, html {
+  height: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-size: 14px;
-  font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+  font-family: Ubuntu, Arial, Helvetica, sans-serif;
   line-height: 1.42;
   color: $gray;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  position: relative;
 }
 
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
-body, html {
-  height: 100%;
+
+ul {
+  margin: 0;
+  padding: 0;
+  li {
+    list-style: none;
+  }
+
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  font-weight: normal;
 }
 
 
-ul {
+p {
   padding: 0;
   margin: 0;
-  list-style: none;
+}
+
+a{
+  text-decoration: none;
 }
 
 .visuallyhidden:not(:focus):not(:active) {
@@ -32,8 +61,11 @@ ul {
   margin: -1px;
   border: 0;
   padding: 0;
+
   white-space: nowrap;
+
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+

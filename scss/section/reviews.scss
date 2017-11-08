@@ -1,5 +1,4 @@
 .reviews__list{
-  width: 100%;
   height: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -12,6 +11,12 @@
   background-size: cover;
   background-repeat: no-repeat;
   filter: grayscale(100%);
+
+  &:hover {
+    .reviews-desc {
+      opacity: 1;
+    }
+  }
 }
 
 
@@ -23,15 +28,11 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: space-around;
   padding: 45px 19px;
+  transition: .5s;
+  background: rgba(0, 0, 0, 0.7);
   opacity: 0;
-
-  &:hover{
-    opacity: 1;
-    background: rgba(0, 0, 0, 0.6);
-  }
 }
 
 .reviews-desc__title{
@@ -48,6 +49,7 @@
 .reviews-desc__link{
   min-width: 110px;
   background-color: $gray;
+  transition: .5s;
 
   &:hover {
     background-color: darken($gray, 7%);
