@@ -7,13 +7,16 @@
 .reviews__item {
   width: 25%;
   height: 50%;
+  position: relative;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   filter: grayscale(100%);
 
+
   &:hover {
     .reviews-desc {
+      position: absolute;
       opacity: 1;
     }
   }
@@ -49,7 +52,7 @@
 .reviews-desc__link{
   min-width: 110px;
   background-color: $gray;
-  transition: .5s;
+  transition:.5s;
 
   &:hover {
     background-color: darken($gray, 7%);

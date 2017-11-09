@@ -20,8 +20,8 @@
         <section class="section hero">
             <div class="container hero__container">
                 <header class="header">
-                        <a class="logo" href="#">
-                            <img src="./img/icons/logo.svg" alt="" class="logo__img">
+                        <a class="logo"> <!--задать ширину фиксир-->
+                            <img src="./img/icons/logo.svg" alt="" class="logo__img"> <!--max-width: 100%-->
                         </a>
                     <div class="header__menu">
                         <nav class="nav">
@@ -66,7 +66,7 @@
 
         <section class="section best section_centered">
             <div class="container best__container">
-                <h2 class="section__title section__title_color_gray section__title_position_center">Мы лучшие</h2>
+                <div class="section__title section__title_color_gray section__title_position_center">Мы лучшие</div>
                 <ul class="best__list">
                     <li class="best__item">
                         <div class="best__icon">
@@ -201,7 +201,66 @@
             </div>
         </section>
 
-        <section class="section menu"></section>
+        <section class="section menu">
+                <div class="menu__title section__title section__title_color_white section__title_position_center">Меню</div>
+               <ul class="menu-acco ">
+                   <li class="menu-acco__item menu-acco__item_active" >
+                       <a href="" class="menu-acco__trigger" style="background: url('./img/section_menu/menu_1.jpg') center center no-repeat; background-size: cover; overflow: hidden;">
+                           <div class="trigger__title">Для мясоедов</div>
+                       </a>
+                       <div class="menu-acco__content">   <!--ш фиксир-->
+                           <div class="content-text"> <!--ш 100% и padding-->
+                               <p>Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений.
+                                   Лирический субъект начинает диссонансный анжамбеман.
+                                   Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив.
+                                   Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр.
+                                   Речевой акт редуцирует диалектический характер.
+                                   Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений.
+                                   Лирический субъект начинает диссонансный анжамбеман.
+                                   Наш современник стал особенно чутко относиться к слову.
+                               </p>
+                           </div>
+                       </div>
+                   </li>
+                   <li class="menu-acco__item menu-acco__item" >
+                       <a href="" class="menu-acco__trigger" style="background: url('./img/section_menu/menu_1.jpg') center center no-repeat; background-size: cover; overflow: hidden;">
+                           <div class="trigger__title">Для мясоедов</div>
+                       </a>
+                       <div class="menu-acco__content">   <!--ш фиксир-->
+                           <div class="content-text"> <!--ш 100% и padding-->
+                               <p>Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений.
+                                   Лирический субъект начинает диссонансный анжамбеман.
+                                   Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив.
+                                   Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр.
+                                   Речевой акт редуцирует диалектический характер.
+                                   Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений.
+                                   Лирический субъект начинает диссонансный анжамбеман.
+                                   Наш современник стал особенно чутко относиться к слову.
+                               </p>
+                           </div>
+                       </div>
+                   </li>
+                   <li class="menu-acco__item menu-acco__item" >
+                       <a href="" class="menu-acco__trigger" style="background: url('./img/section_menu/menu_1.jpg') center center no-repeat; background-size: cover; overflow: hidden;">
+                           <div class="trigger__title">Для мясоедов</div>
+                       </a>
+                       <div class="menu-acco__content">   <!--ш фиксир-->
+                           <div class="content-text"> <!--ш 100% и padding-->
+                               <p>Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений.
+                                   Лирический субъект начинает диссонансный анжамбеман.
+                                   Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив.
+                                   Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр.
+                                   Речевой акт редуцирует диалектический характер.
+                                   Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений.
+                                   Лирический субъект начинает диссонансный анжамбеман.
+                                   Наш современник стал особенно чутко относиться к слову.
+                               </p>
+                           </div>
+                       </div>
+                   </li>
+               </ul>
+
+        </section>
 
         <section class="section reviews">
             <div class="section__title visuallyhidden">Отзывы</div>
@@ -377,7 +436,75 @@
             </ul>
         </section>
 
-        <section class="section"></section>
+        <section class="section form section_centered">
+            <div class="container">
+                <div class="section__title">Закажите доставку</div>
+                <div class="form">
+                    <form action="" class="form__elem">
+                        <div class="form__content">
+                            <div class="form__row">
+                                <label class="form__block">
+                                    <div class=" form__block-title">
+                                        Имя:
+                                    </div>
+                                    <input type="text" class="form__input">
+
+                                </label>
+                                <label  class="form__block">
+                                    <div class=" form__block-title">
+                                        Телефон:
+                                    </div>
+                                    <input type="text" class="form__input">
+
+                                </label>
+                            </div>
+
+                            <div class="form__row">
+                                <label  class="form__block">
+                                    <div class=" form__block-title">
+                                        Улица
+                                    </div>
+                                    <input type="text" class="form__input">
+
+                                </label>
+                            </div>
+
+
+                            <div class="form__row">
+                                <label class="form__block">
+                                    <div class=" form__block-title">
+                                        Дом
+                                    </div>
+                                    <input type="text" class="form__input">
+
+                                </label>
+                                <label  class="form__block">
+                                    <div class=" form__block-title">
+                                        Корпус
+                                    </div>
+                                    <input type="text" class="form__input">
+
+                                </label>
+                                <label class="form__block">
+                                    <div class=" form__block-title">
+                                        Квартира
+                                    </div>
+                                    <input type="text" class="form__input">
+
+                                </label>
+                                <label  class="form__block">
+                                    <div class=" form__block-title">
+                                        Этаж
+                                    </div>
+                                    <input type="text" class="form__input">
+
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
 
         <section class="section map">
             <div class="map__desc visuallyhidden">

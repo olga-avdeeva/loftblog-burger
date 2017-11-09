@@ -1,0 +1,84 @@
+.menu{
+  background: url("../img/bg/bg_menu.jpg") center center no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.menu__title{
+  position: absolute;
+  top: 5%;
+  bottom: 0;
+  left: 4%;
+}
+
+.menu-acco{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.menu-acco__item{
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.menu-acco__trigger{
+  color: $white;
+  font-family: Gagalin;
+  font-size: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 60px;
+  position: relative;
+
+  &:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right:0;
+    bottom: 0;
+     background-color: rgba($gray, .7);
+   }
+
+}
+
+.menu-acco__item_active{
+    .menu-acco__trigger{
+      color: $yellow;
+    }
+
+    .menu-acco__content{
+      width: 540px;
+      background-color: rgba($gray, .8);
+
+      .content-text{
+        width: 100%;
+        color: $white;
+        font-family: Ubuntu;
+        padding-left: 40px;
+        padding-top: 65px;
+        text-align: left;
+      }
+    }
+
+}
+
+.trigger__title{
+  transform: rotate(-90deg) translateX(50%);
+  white-space: nowrap;
+}
+
+
+.menu-acco__content{
+  width: 0;
+  overflow: hidden;
+}

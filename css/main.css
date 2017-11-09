@@ -111,7 +111,8 @@ a {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.31);
   min-width: 940px;
-  min-height: 650px; }
+  min-height: 650px;
+  overflow: hidden; }
   .section_centered {
     display: -webkit-box;
     display: -webkit-flex;
@@ -136,6 +137,8 @@ a {
   margin-bottom: 40px; }
   .section__title_color_gray {
     color: #2f3234; }
+  .section__title_color_white {
+    color: #ffffff; }
   .section__title_position_center {
     text-align: center; }
 
@@ -497,12 +500,20 @@ footer {
 .reviews__item {
   width: 25%;
   height: 50%;
+  position: relative;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%); }
   .reviews__item:hover .reviews-desc {
+    position: absolute;
+    -webkit-transform: scale(0.5, 0.5);
+    -ms-transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5);
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    transform: scale(1, 1);
     opacity: 1; }
 
 .reviews__img {
@@ -551,6 +562,135 @@ footer {
   background: url("../img/bg/bg_map.jpg") center center no-repeat;
   background-size: cover;
   position: relative; }
+
+.menu {
+  background: url("../img/bg/bg_menu.jpg") center center no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  position: relative; }
+
+.menu__title {
+  position: absolute;
+  top: 5%;
+  bottom: 0;
+  left: 4%; }
+
+.menu-acco {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+
+.menu-acco__item {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+
+.menu-acco__trigger {
+  color: #ffffff;
+  font-family: Gagalin;
+  font-size: 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100%;
+  width: 60px;
+  position: relative; }
+  .menu-acco__trigger:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(47, 50, 52, 0.7); }
+
+.menu-acco__item_active .menu-acco__trigger {
+  color: #f9b43b; }
+
+.menu-acco__item_active .menu-acco__content {
+  width: 540px;
+  background-color: rgba(47, 50, 52, 0.8); }
+  .menu-acco__item_active .menu-acco__content .content-text {
+    width: 100%;
+    color: #ffffff;
+    font-family: Ubuntu;
+    padding-left: 40px;
+    padding-top: 65px;
+    text-align: left; }
+
+.trigger__title {
+  -webkit-transform: rotate(-90deg) translateX(50%);
+  -ms-transform: rotate(-90deg) translateX(50%);
+  transform: rotate(-90deg) translateX(50%);
+  white-space: nowrap; }
+
+.menu-acco__content {
+  width: 0;
+  overflow: hidden; }
+
+.form {
+  background: url("../img/bg/bg_form.jpg") center center no-repeat;
+  background-size: cover; }
+
+.form__block-title {
+  color: #ffffff; }
+
+.form__row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px; }
+
+.form__block {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin-right: 20px; }
+  .form__block:last-child {
+    margin-right: 0; }
+
+.form__input {
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  width: 100%; }
 
 .footer {
   background: url("../img/bg/bg_footer.jpg") center center no-repeat;

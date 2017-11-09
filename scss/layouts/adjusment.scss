@@ -23,6 +23,7 @@
   background-color: rgba(0,0,0,0.31);
   min-width: 940px;
   min-height: 650px;
+  overflow: hidden;
 
   &_centered{
     display: flex;
@@ -42,6 +43,9 @@
   &_color {
     &_gray{
       color: $gray;
+    }
+    &_white{
+      color: $white;
     }
   }
   &_position{
