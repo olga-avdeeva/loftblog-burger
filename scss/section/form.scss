@@ -3,9 +3,11 @@
   background-size: cover;
 }
 
+/*
 .form__block-title{
   color: $white;
 }
+*/
 
 .form__wrapper{
   display: flex;
@@ -24,7 +26,34 @@
     &:last-child{
       margin-bottom: 10px;
     }
+
+    &_radio{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      margin-right: 20px;
+      margin-bottom: 25px;
+
+      &:last-child{
+        margin-right: 0;
+      }
+    }
 }
+
+/*
+.form__row_radio{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-right: 20px;
+  margin-bottom: 25px;
+  &:last-child{
+    margin-right: 0;
+  }
+
+}
+*/
+
 .form__block{
   flex: 1;
   margin-right: 20px;
@@ -32,7 +61,24 @@
   &:last-child{
     margin-right: 0;
   }
+
+  &-title{
+    color: $white;
+  }
+
+  &_other{
+    display: flex;
+    flex: 1;
+    align-items: center;
+  }
 }
+
+/*
+.form__block_other{
+  display: flex;
+  flex: 1;
+  align-items: center;
+}*/
 .form__input{
   border: none;
   border-radius: 5px;
@@ -41,6 +87,11 @@
 
     &-textarea{
       resize: none;
+      height: 112px;
+    }
+
+    &-hidden{
+      display: none;
     }
 }
 
@@ -54,9 +105,9 @@
     }
 }
 
-.form__input-hidden{
+/*.form__input-hidden{
   display: none;
-}
+}*/
 
 .radio__fake{
   width: 16px;
@@ -68,25 +119,23 @@
   margin-right: 10px;
 }
 
-.form__row1{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  margin-right: 20px;
-  margin-bottom: 25px;
-
-    &:last-child{
-    margin-right: 0;
-  }
+.checkbox-fake{
+  width: 16px;
+  height: 16px;
+  background-color: $white;
+  // border: 8px solid $white;
+  position: relative;
+  margin-right: 10px;
 }
 
-.form__block1{
+
+.form__block_other{
   display: flex;
   flex: 1;
   align-items: center;
 }
 
-.form__row2{
+.form__row_btn{
   display: flex;
   flex-direction: row;
 
@@ -105,29 +154,15 @@
   //border: 4px solid $orange;
 }
 
-.checkbox-fake{
-  width: 16px;
-  height: 16px;
-  background-color: $white;
-  // border: 8px solid $white;
-  position: relative;
-  margin-right: 10px;
-}
 
-.form__input-hidden:checked + .checkbox-fake:after{
+.form__input-hidden:checked + .checkbox-fake:after {
   content: "";
- position: absolute;
+  position: absolute;
   top: 2px;
-  right:2px;
+  right: 2px;
   width: 12px;
   height: 12px;
-  background: url("../img/icons/check.svg") center center no-repeat ;
- background-size: cover;
-  //transform: translate(-50%, -50%);
-  //border: 4px solid $orange;
+  background: url("../img/icons/check.svg") center center no-repeat;
+  background-size: cover;
 }
-
-//.checkbox-fake_checked{
-//  display: none;
-//}
 
