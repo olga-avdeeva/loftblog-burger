@@ -23,6 +23,14 @@ background: url('../img/bg/bg_hero.jpg') center center no-repeat;
   margin-top: 12px;
 }
 
+.logo{
+  width: 92px;
+  height: 70px;
+}
+
+.logo__img{
+  max-height: 100%;
+}
 .header__menu{
   display: flex;
   align-items: center;

@@ -210,6 +210,13 @@ footer {
   justify-content: space-between;
   margin-top: 12px; }
 
+.logo {
+  width: 92px;
+  height: 70px; }
+
+.logo__img {
+  max-height: 100%; }
+
 .header__menu {
   display: -webkit-box;
   display: -webkit-flex;
