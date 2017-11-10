@@ -163,6 +163,26 @@ footer {
   .order-link:hover {
     background-color: #ce401a; }
 
+.fixed__list {
+  position: fixed;
+  top: 90px;
+  right: 48px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  .fixed__list .fixed__item {
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    border: 6px solid #ffffff;
+    margin-bottom: 15px; }
+
 /*hero header*/
 .hero {
   background: url("../img/bg/bg_hero.jpg") center center no-repeat;

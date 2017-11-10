@@ -76,3 +76,21 @@ footer {
     background-color: darken($orange, 7%);
   }
 }
+
+.fixed__list{
+  position: fixed;
+  top: 90px;
+  right: 48px;
+  display: flex;
+  flex-direction: column;
+
+    .fixed__item{
+         width: 0;
+         height: 0;
+         border-radius: 50%;
+         border: 6px solid $white;
+      margin-bottom: 15px;
+
+    }
+}
+
