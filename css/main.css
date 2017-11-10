@@ -792,26 +792,15 @@ footer {
   position: relative;
   margin-right: 10px; }
 
-.form__input-hidden:checked + .checkbox-fake {
+.form__input-hidden:checked + .checkbox-fake:after {
+  content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 6px;
-  height: 10px;
-  border: 2px solid #e45028;
-  border-right-width: 0;
-  border-top-width: 0;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg); }
-
-.checkbox-fake_checked {
-  display: none; }
-
-.form__input-checkbox {
-  fill: #e45028;
+  top: 2px;
+  right: 2px;
   width: 12px;
-  height: 12px; }
+  height: 12px;
+  background: url("../img/icons/check.svg") center center no-repeat;
+  background-size: cover; }
 
 .footer {
   background: url("../img/bg/bg_footer.jpg") center center no-repeat;

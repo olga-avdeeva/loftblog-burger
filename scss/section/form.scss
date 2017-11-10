@@ -114,27 +114,20 @@
   margin-right: 10px;
 }
 
-.form__input-hidden:checked + .checkbox-fake{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 6px;
-  height: 10px;
-  border:2px solid $orange;
-  border-right-width: 0;
-  border-top-width: 0;
-  transform: rotate(0deg);
- //transform: translate(-50%, -50%);
-
+.form__input-hidden:checked + .checkbox-fake:after{
+  content: "";
+ position: absolute;
+  top: 2px;
+  right:2px;
+  width: 12px;
+  height: 12px;
+  background: url("../img/icons/check.svg") center center no-repeat ;
+ background-size: cover;
+  //transform: translate(-50%, -50%);
   //border: 4px solid $orange;
 }
 
-.checkbox-fake_checked{
-  display: none;
-}
-.form__input-checkbox{
-  fill:$orange;
-  width: 12px;
-  height: 12px;
-}
+//.checkbox-fake_checked{
+//  display: none;
+//}
 
