@@ -7,8 +7,8 @@
 }
 
 .best__icon-pic{
-  width: 97px;
-  height: 89px;
+  width: rem(97px);
+  height: rem(89px);
   fill: $orange;
 
   &_yellow{
@@ -22,10 +22,10 @@
 
 .best__title{
   font-family:"Lifehack";
-  font-size: 24.1px;
+  font-size: rem(24px);
   text-align: center;
 /*  border: 1px solid;*/
-  margin: 10px 0;
+  margin: rem(10px) 0;
 }
 
 

@@ -1,7 +1,7 @@
 .footer{
   background: url("../img/bg/bg_footer.jpg") center center no-repeat;
   background-size: cover;
-  padding: 10px 0px;
+  padding: rem(10px) rem(0px);
 }
 
 .footer__container{
@@ -30,10 +30,10 @@
 }
 
 .contacts__number-img{
-  width: 11px;
-  height: 11px;
+  width: rem(11px);
+  height: rem(11px);
   fill: $orange;
-  margin-right: 8px;
+  margin-right: rem(8px);
 }
 
 .social__list{
@@ -45,7 +45,7 @@
 }
 
 .social__item{
-  margin-right: 10px;
+  margin-right: rem(10px);
 
   &:last-child{
     margin-right: 0;
@@ -53,8 +53,8 @@
 }
 
 .social__img{
-  height: 20px;
-  width: 20px;
+  height: rem(20px);
+  width: rem(20px);
   fill: $gray;
 
   &:hover{

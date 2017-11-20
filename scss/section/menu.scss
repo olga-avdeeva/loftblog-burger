@@ -31,13 +31,17 @@
 .menu-acco__trigger{
   color: $white;
   font-family: Gagalin;
-  font-size: 40px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: rem(40px);
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100%;
-  width: 60px;
+  width: rem(60px);
   position: relative;
+  align-items: center;
 
   &:before{
     content: "";
@@ -57,23 +61,23 @@
     }
 
     .menu-acco__content{
-      width: 540px;
+      width: rem(540px);
       background-color: rgba($gray, .8);
 
       .content-text{
         width: 100%;
         color: $white;
         font-family: Ubuntu;
-        padding-left: 40px;
-        padding-top: 65px;
+        padding-left: rem(40px);
+        padding-top: rem(65px);
         text-align: left;
       }
     }
 
 }
 
-.trigger__title{
-  transform: rotate(-90deg) translateX(50%);
+.trigger-title{
+  transform: rotate(-90deg);
   white-space: nowrap;
 }
 

@@ -1,3 +1,15 @@
+html{
+  font-size: 14px;
+
+  @include tablets{
+    font-size: 13px;
+  }
+
+  @include phones{
+    font-size:12px;
+  }
+}
+
 body, html {
   height: 100%;
 }
@@ -5,7 +17,6 @@ body, html {
 body {
   margin: 0;
   padding: 0;
-  font-size: 14px;
   font-family: Ubuntu, Arial, Helvetica, sans-serif;
   line-height: 1.42;
   color: $gray;
@@ -39,7 +50,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin-top: 0;
+  margin: 0;
   font-weight: normal;
 }
 
@@ -56,9 +67,9 @@ a{
 .visuallyhidden:not(:focus):not(:active) {
   position: absolute;
 
-  width: 1px;
-  height: 1px;
-  margin: -1px;
+  width: rem(1px);
+  height: rem(1px);
+  margin: rem(-1px);
   border: 0;
   padding: 0;
 

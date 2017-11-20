@@ -1,6 +1,6 @@
 .wrapper {
   width: 100%;
-  min-width: 940px + 20px;
+ // min-width: 940px + 20px;
   min-height: 100%;
   position: relative;
   //overflow: hidden;
@@ -8,7 +8,7 @@
 
 .maincontent {
   height: 100%;
-  min-height: 650px;
+  min-height: rem(650px);
 }
 
 .container {
@@ -21,8 +21,8 @@
 .section {
   height: 100vh;
   background-color: rgba(0,0,0,0.31);
-  min-width: 940px;
-  min-height: 650px;
+ // min-width: 940px;
+  min-height: rem(650px);
   overflow: hidden;
 
   &_centered{
@@ -35,10 +35,9 @@
 .section__title {
   color: $yellow;
   font-family: 'Gagalin';
-  font-size: 72px;
+  font-size: rem(72px);
   font-weight: 400;
   line-height: 1.42;
-  margin-bottom:40px;
 
   &_color {
     &_gray{
@@ -62,12 +61,12 @@ footer {
 
 .order-link {
   min-width: rem(98px);
-  padding: 10px 17px;
+  padding: rem(10px) rem(17px);
   border-radius: 5px;
   background-color: $orange;
   color: #fff;
   text-decoration: none;
-  font-size: 13px;
+  font-size: rem(13px);
   font-weight: 500;
   line-height: 1.42;
   text-transform: uppercase;
@@ -79,8 +78,8 @@ footer {
 
 .fixed__list{
   position: fixed;
-  top: 90px;
-  right: 48px;
+  top: rem(90px);
+  right: rem(48px);
   display: flex;
   flex-direction: column;
 
@@ -89,7 +88,7 @@ footer {
          height: 0;
          border-radius: 50%;
          border: 3px solid $white;
-      margin-bottom: 15px;
+      margin-bottom: rem(15px);
 
     }
 }

@@ -20,27 +20,32 @@ background: url('../img/bg/bg_hero.jpg') center center no-repeat;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 12px;
+  margin-top: rem(12px);
+  align-items: center;
 }
 
 .logo{
-  width: 92px;
-  height: 70px;
+  width: rem(92px);
 }
 
 .logo__img{
-  max-height: 100%;
+  max-width: 100%;
 }
 .header__menu{
   display: flex;
   align-items: center;
   margin-left: auto;
+
+  @include tablets{
+    display: none;
+  }
+
+  @include phones{
+    display: none;
+  }
 }
 
-/*.logo__img{
-  width: 92px;
-  height: 70px;
-}*/
+
 
 .nav__list{
   display: flex;
@@ -52,8 +57,8 @@ background: url('../img/bg/bg_hero.jpg') center center no-repeat;
   &:after {
     display: block;
     content: ' ';
-    @include circle(4px, #fff);
-    margin: 0 16px;
+    @include circle(rem(4px), #fff);
+    margin: 0 rem(16px);
   }
   &:last-child:after {
     display: none;
@@ -62,7 +67,7 @@ background: url('../img/bg/bg_hero.jpg') center center no-repeat;
 
 .nav__link {
   color: #ffffff;
-  font-size: 13px;
+  font-size: rem(13px);
   font-weight: 500;
   line-height: 1.42;
   text-transform: uppercase;
@@ -76,20 +81,43 @@ background: url('../img/bg/bg_hero.jpg') center center no-repeat;
 }
 
 .header__btn{
-  margin: 0 16px;
+  margin: 0 rem(16px);
 }
 
 .hero__content{
   display: flex;
   align-items: center;
+
+    @include tablets{
+      flex-direction: column;
+      padding: 0 151px;
+    }
 }
 .hero__img, .hero__description {
   width: 50%;
+
+  @include tablets{
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.hero__burger{
+  max-width: 100%;
+}
+
+.hero__description{
+  margin-top: rem(53px);
+
+    @include tablets{
+      margin-top: 0;
+    }
 }
 .hero__description-text {
   color: $white;
   font-family: 'Lifehack';
-  font-size: 65px;
+  text-transform: lowercase;
+  font-size: rem(65px);
   font-weight: 500;
   line-height: 1;
 }
@@ -99,12 +127,12 @@ background: url('../img/bg/bg_hero.jpg') center center no-repeat;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: rem(10px);
 }
 
 .arrow-link__img{
-  width: 34px;
-  height:21px;
+  width: rem(34px);
+  height:rem(21px);
   fill: $white;
   transition: .3s;
 
