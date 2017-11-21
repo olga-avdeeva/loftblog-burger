@@ -18,7 +18,12 @@
     .reviews-desc {
       position: absolute;
       opacity: 1;
+      width: 100%;
     }
+  }
+  @include tablets {
+    width: 50%;
+    height: 25%;
   }
 }
 
@@ -36,6 +41,15 @@
   transition: .5s;
   background: rgba(0, 0, 0, 0.7);
   opacity: 0;
+
+  @include tablets{
+    align-items: center;
+  }
+  @include phones{
+    .reviews-desc__text{
+      display: none;
+    }
+  }
 }
 
 .reviews-desc__title{

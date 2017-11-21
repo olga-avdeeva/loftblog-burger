@@ -90,8 +90,11 @@ background: url('../img/bg/bg_hero.jpg') center center no-repeat;
 
     @include tablets{
       flex-direction: column;
-      padding: 0 151px;
+      padding: 0 rem(151px);
     }
+  @include phones{
+    padding:0 10%;
+  }
 }
 .hero__img, .hero__description {
   width: 50%;

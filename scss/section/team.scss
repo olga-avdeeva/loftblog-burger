@@ -21,6 +21,30 @@
     @include tablets{
       width: 100%;
     }
+  @include phones{
+    padding-left: 0;
+  }
+
+}
+
+.team__content{
+  @include tablets{
+    text-align: center;
+    margin-top:rem(123px);
+
+    @include phones{
+      margin-top: 0;
+    }
+  }
+}
+
+.team-acco{
+  @include tablets{
+    margin-top:rem(128px);
+    @include phones{
+      margin-top:rem(40px);
+    }
+  }
 }
 
 .team-acco__trigger{
@@ -36,6 +60,10 @@
     border-top-color: $yellow;
     border-bottom-width: 0;
     margin-right:rem(5px);
+  }
+  @include tablets{
+    font-family: Gagalin;
+    font-size:rem(24.97px);
   }
 }
 
@@ -66,6 +94,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom:rem(31px);
   }
 }
 .team-acco__item_active{
@@ -74,7 +103,7 @@
 
     &:before{
       transform: rotate(-180deg);
-    }
+     }
 
     }
   .team-acco__content{
@@ -85,6 +114,7 @@
       @include tablets{
         flex-direction: column;
         align-items: center;
+
       }
   }
 }
