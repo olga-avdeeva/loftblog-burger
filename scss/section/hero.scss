@@ -123,6 +123,10 @@ background: url('../img/bg/bg_hero.jpg') center center no-repeat;
   font-size: rem(65px);
   font-weight: 500;
   line-height: 1;
+    
+    @include phones{
+      font-size: rem(54px);
+    }
 }
 
 .arrow-down{
