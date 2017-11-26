@@ -1,5 +1,10 @@
 .map{
-  background: url("../img/bg/bg_map.jpg") center center no-repeat;
-  background-size: cover;
+  /*background: url("../img/bg/bg_map.jpg") center center no-repeat;
+  background-size: cover;*/
   position: relative;
+}
+
+.yandex-map{
+  height: 100%;
+  width: 100%;
 }

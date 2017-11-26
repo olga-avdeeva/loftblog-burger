@@ -544,7 +544,7 @@
             </div>
         </section>
 
-        <section class="section map">
+        <section class="section map" >
             <div class="map__desc visuallyhidden">
                 <div class=" visuallyhidden ">
                 <h2 class="section__title">Карта проезда</h2>
@@ -554,55 +554,58 @@
                     </ul>
                 </div>
             </div>
-
+            <div class="yandex-map" id = "map">
+            </div>
+        
+            <footer class="footer">
+                <div class="container footer__container">
+                    <address class="contacts">
+                        <div class="contacts__address">
+                            <p>Санкт-Петербург, ул. Бабушкина, д.12\1,15</p>
+                        </div>
+                        <div class="contacts__number">
+                            <svg class="contacts__number-img">
+                                <use xlink:href="./img/icons/sprite.svg#phone"></use>
+                            </svg>
+                            <p>+7(812)377-13-77</p>
+                        </div>
+                    </address>
+                    <ul class="social__list">
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <svg class="social__img">
+                                    <use xlink:href="./img/icons/sprite.svg#vk"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <svg class="social__img">
+                                    <use xlink:href="./img/icons/sprite.svg#fb"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <svg class="social__img">
+                                    <use xlink:href="./img/icons/sprite.svg#inst"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link">
+                                <svg class="social__img">
+                                    <use xlink:href="./img/icons/sprite.svg#twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+    
+                    </ul>
+                </div>
+            </footer>
         </section>
 
-        <footer class="footer">
-            <div class="container footer__container">
-                <address class="contacts">
-                    <div class="contacts__address">
-                        <p>Санкт-Петербург, ул. Бабушкина, д.12\1,15</p>
-                    </div>
-                    <div class="contacts__number">
-                        <svg class="contacts__number-img">
-                            <use xlink:href="./img/icons/sprite.svg#phone"></use>
-                        </svg>
-                        <p>+7(812)377-13-77</p>
-                    </div>
-                </address>
-                <ul class="social__list">
-                    <li class="social__item">
-                        <a href="#" class="social__link">
-                            <svg class="social__img">
-                                <use xlink:href="./img/icons/sprite.svg#vk"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a href="#" class="social__link">
-                            <svg class="social__img">
-                                <use xlink:href="./img/icons/sprite.svg#fb"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a href="#" class="social__link">
-                            <svg class="social__img">
-                                <use xlink:href="./img/icons/sprite.svg#inst"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a href="#" class="social__link">
-                            <svg class="social__img">
-                                <use xlink:href="./img/icons/sprite.svg#twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-        </footer>
+       
     </div>
 </div>
     <ul class="fixed__list">
@@ -615,5 +618,8 @@
         <li class="fixed__item"></li>
         <li class="fixed__item"></li>
     </ul>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
+    </script>
+    <script src="js/main.js"></script>
 </body>
 </html>

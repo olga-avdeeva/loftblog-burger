@@ -715,9 +715,13 @@ footer {
     background-color: #1e2021; }
 
 .map {
-  background: url("../img/bg/bg_map.jpg") center center no-repeat;
-  background-size: cover;
+  /*background: url("../img/bg/bg_map.jpg") center center no-repeat;
+  background-size: cover;*/
   position: relative; }
+
+.yandex-map {
+  height: 100%;
+  width: 100%; }
 
 .menu {
   background: url("../img/bg/bg_menu.jpg") center center no-repeat;
@@ -1067,7 +1071,10 @@ footer {
 .footer {
   background: url("../img/bg/bg_footer.jpg") center center no-repeat;
   background-size: cover;
-  padding: 0.71429rem 0rem; }
+  padding: 0.71429rem 0rem;
+  left: 0;
+  right: 0;
+  bottom: 0; }
 
 .footer__container {
   display: -webkit-box;
