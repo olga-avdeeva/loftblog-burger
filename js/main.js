@@ -30,3 +30,14 @@ ymaps.ready(init);
         myMap.geoObjects.add(myCollection);
     }
     
+
+//hamburger
+var menu = document.querySelector('.hamburger-menu');
+var listHamb = document.querySelector('.header__menu-hamburger');
+function toggleMenu () {
+  menu.classList.toggle('open');
+  listHamb.classList.toggle('open');
+
+ 
+}
+menu.addEventListener('click', toggleMenu);

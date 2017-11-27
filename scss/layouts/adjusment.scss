@@ -73,6 +73,9 @@ footer {
   &:hover {
     background-color: darken($orange, 7%);
   }
+  @include tablets{
+    margin-right: 20px;
+  }
 }
 
 .fixed__list{

@@ -30,7 +30,6 @@
 .team__content{
   @include tablets{
     text-align: center;
-    margin-top:rem(123px);
 
     @include phones{
       margin-top: 0;
@@ -40,9 +39,9 @@
 
 .team-acco{
   @include tablets{
-    margin-top:rem(128px);
+    //margin-top:rem(80px);
     @include phones{
-      margin-top:rem(40px);
+      margin-top:rem(20px);
     }
   }
 }

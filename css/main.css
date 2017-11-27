@@ -167,6 +167,9 @@ footer {
   transition: .5s; }
   .order-link:hover {
     background-color: #ce401a; }
+  @media screen and (max-width: 768px) {
+    .order-link {
+      margin-right: 20px; } }
 
 .fixed__list {
   position: fixed;
@@ -240,7 +243,8 @@ footer {
   align-items: center; }
 
 .logo {
-  width: 6.57143rem; }
+  width: 6.57143rem;
+  z-index: 200; }
 
 .logo__img {
   max-width: 100%; }
@@ -305,6 +309,12 @@ footer {
 
 .header__btn {
   margin: 0 1.14286rem; }
+  @media screen and (max-width: 768px) {
+    .header__btn {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; } }
 
 .hero__content {
   display: -webkit-box;
@@ -326,6 +336,17 @@ footer {
   @media screen and (max-width: 480px) {
     .hero__content {
       padding: 0 10%; } }
+
+@media screen and (max-width: 768px) {
+  .hero__img {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end; } }
 
 .hero__img, .hero__description {
   width: 50%; }
@@ -383,6 +404,246 @@ footer {
   transition: .3s; }
   .arrow-link__img:hover {
     fill: #2f3234; }
+
+.header__menu-hamburger {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background: rgba(47, 50, 52, 0.99);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .header__menu-hamburger.open {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+
+.nav__list-hamb {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.list-hamb__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  .list-hamb__item:after {
+    display: block;
+    content: ' ';
+    width: 0.28571rem;
+    height: 0.28571rem;
+    border-radius: 0.14286rem;
+    background-color: #fff;
+    margin: 1.14286rem 0; }
+  .list-hamb__item:last-child:after {
+    display: none; }
+
+.list-hamb__link {
+  color: #ffffff;
+  font-size: 0.92857rem;
+  font-weight: 500;
+  line-height: 1.42;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s; }
+  .list-hamb__link:hover {
+    text-decoration: underline; }
+
+.hamburger-menu {
+  display: none; }
+  @media screen and (max-width: 768px) {
+    .hamburger-menu {
+      display: block;
+      width: 3em;
+      height: 3em;
+      position: relative;
+      z-index: 200;
+      margin: 0; } }
+
+.hamburger-menu .bit-1::before {
+  content: '';
+  left: 0.5em;
+  top: 0.5em;
+  position: absolute;
+  width: 1em;
+  -webkit-transform-origin: left bottom;
+  -ms-transform-origin: left bottom;
+  transform-origin: left bottom;
+  height: 0.3em;
+  background: white;
+  -webkit-transition: top 0.3s, -webkit-transform 0.3s;
+  transition: top 0.3s, -webkit-transform 0.3s;
+  -o-transition: transform 0.3s, top 0.3s;
+  transition: transform 0.3s, top 0.3s;
+  transition: transform 0.3s, top 0.3s, -webkit-transform 0.3s; }
+
+.hamburger-menu .bit-1::after {
+  content: '';
+  position: absolute;
+  right: 0.5em;
+  top: 0.5em;
+  width: 1em;
+  -webkit-transform-origin: right bottom;
+  -ms-transform-origin: right bottom;
+  transform-origin: right bottom;
+  height: 0.3em;
+  background: white;
+  -webkit-transition: top 0.3s, -webkit-transform 0.3s;
+  transition: top 0.3s, -webkit-transform 0.3s;
+  -o-transition: transform 0.3s, top 0.3s;
+  transition: transform 0.3s, top 0.3s;
+  transition: transform 0.3s, top 0.3s, -webkit-transform 0.3s; }
+
+.hamburger-menu .bit-2 {
+  position: absolute;
+  width: 2em;
+  top: 50%;
+  left: 50%;
+  height: 0.3em;
+  background: white;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: width 0.3s 0.6s, -webkit-transform 0.3s 0.3s;
+  transition: width 0.3s 0.6s, -webkit-transform 0.3s 0.3s;
+  -o-transition: transform 0.3s 0.3s, width 0.3s 0.6s;
+  transition: transform 0.3s 0.3s, width 0.3s 0.6s;
+  transition: transform 0.3s 0.3s, width 0.3s 0.6s, -webkit-transform 0.3s 0.3s; }
+
+.hamburger-menu .bit-3::before {
+  content: '';
+  position: absolute;
+  bottom: 0.5em;
+  left: 0.5em;
+  width: 1em;
+  -webkit-transform-origin: left top;
+  -ms-transform-origin: left top;
+  transform-origin: left top;
+  height: 0.3em;
+  background: white;
+  -webkit-transition: bottom 0.3s, -webkit-transform 0.3s;
+  transition: bottom 0.3s, -webkit-transform 0.3s;
+  -o-transition: transform 0.3s, bottom 0.3s;
+  transition: transform 0.3s, bottom 0.3s;
+  transition: transform 0.3s, bottom 0.3s, -webkit-transform 0.3s; }
+
+.hamburger-menu .bit-3::after {
+  content: '';
+  position: absolute;
+  bottom: 0.5em;
+  right: 0.5em;
+  width: 1em;
+  -webkit-transform-origin: right top;
+  -ms-transform-origin: right top;
+  transform-origin: right top;
+  height: 0.3em;
+  background: white;
+  -webkit-transition: bottom 0.3s, -webkit-transform 0.3s;
+  transition: bottom 0.3s, -webkit-transform 0.3s;
+  -o-transition: transform 0.3s, bottom 0.3s;
+  transition: transform 0.3s, bottom 0.3s;
+  transition: transform 0.3s, bottom 0.3s, -webkit-transform 0.3s; }
+
+.hamburger-menu.open .bit-1:before {
+  top: 0.4em;
+  width: 1.2em;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transform-origin: left bottom;
+  -ms-transform-origin: left bottom;
+  transform-origin: left bottom;
+  -webkit-transition: width 0.3s 0.3s, top 0.3s 0.3s, -webkit-transform 0.3s 0.3s;
+  transition: width 0.3s 0.3s, top 0.3s 0.3s, -webkit-transform 0.3s 0.3s;
+  -o-transition: transform 0.3s 0.3s, width 0.3s 0.3s, top 0.3s 0.3s;
+  transition: transform 0.3s 0.3s, width 0.3s 0.3s, top 0.3s 0.3s;
+  transition: transform 0.3s 0.3s, width 0.3s 0.3s, top 0.3s 0.3s, -webkit-transform 0.3s 0.3s; }
+
+.hamburger-menu.open .bit-1:after {
+  top: 0.4em;
+  width: 1.2em;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transform-origin: right bottom;
+  -ms-transform-origin: right bottom;
+  transform-origin: right bottom;
+  -webkit-transition: width 0.3s 0.3s, top 0.3s 0.3s, -webkit-transform 0.3s 0.3s;
+  transition: width 0.3s 0.3s, top 0.3s 0.3s, -webkit-transform 0.3s 0.3s;
+  -o-transition: transform 0.3s 0.3s, width 0.3s 0.3s, top 0.3s 0.3s;
+  transition: transform 0.3s 0.3s, width 0.3s 0.3s, top 0.3s 0.3s;
+  transition: transform 0.3s 0.3s, width 0.3s 0.3s, top 0.3s 0.3s, -webkit-transform 0.3s 0.3s; }
+
+.hamburger-menu.open .bit-2 {
+  width: 0.3em;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+  -ms-transform: translate(-50%, -50%) rotate(45deg);
+  transform: translate(-50%, -50%) rotate(45deg);
+  -webkit-transition: width 0.3s, -webkit-transform 0.3s 0.3s;
+  transition: width 0.3s, -webkit-transform 0.3s 0.3s;
+  -o-transition: transform 0.3s 0.3s, width 0.3s;
+  transition: transform 0.3s 0.3s, width 0.3s;
+  transition: transform 0.3s 0.3s, width 0.3s, -webkit-transform 0.3s 0.3s; }
+
+.hamburger-menu.open .bit-3:before {
+  bottom: 0.4em;
+  width: 1.2em;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transform-origin: left top;
+  -ms-transform-origin: left top;
+  transform-origin: left top;
+  -webkit-transition: width 0.3s 0.3s, bottom 0.3s 0.3s, -webkit-transform 0.3s 0.3s;
+  transition: width 0.3s 0.3s, bottom 0.3s 0.3s, -webkit-transform 0.3s 0.3s;
+  -o-transition: transform 0.3s 0.3s, width 0.3s 0.3s, bottom 0.3s 0.3s;
+  transition: transform 0.3s 0.3s, width 0.3s 0.3s, bottom 0.3s 0.3s;
+  transition: transform 0.3s 0.3s, width 0.3s 0.3s, bottom 0.3s 0.3s, -webkit-transform 0.3s 0.3s; }
+
+.hamburger-menu.open .bit-3:after {
+  bottom: 0.4em;
+  width: 1.2em;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transform-origin: right top;
+  -ms-transform-origin: right top;
+  transform-origin: right top;
+  -webkit-transition: width 0.3s 0.3s, bottom 0.3s 0.3s, -webkit-transform 0.3s 0.3s;
+  transition: width 0.3s 0.3s, bottom 0.3s 0.3s, -webkit-transform 0.3s 0.3s;
+  -o-transition: transform 0.3s 0.3s, width 0.3s 0.3s, bottom 0.3s 0.3s;
+  transition: transform 0.3s 0.3s, width 0.3s 0.3s, bottom 0.3s 0.3s;
+  transition: transform 0.3s 0.3s, width 0.3s 0.3s, bottom 0.3s 0.3s, -webkit-transform 0.3s 0.3s; }
 
 .best {
   background: url("../img/bg/bg_best.jpg") center center no-repeat;
@@ -522,18 +783,14 @@ footer {
 
 @media screen and (max-width: 768px) {
   .team__content {
-    text-align: center;
-    margin-top: 8.78571rem; } }
+    text-align: center; } }
   @media screen and (max-width: 768px) and (max-width: 480px) {
     .team__content {
       margin-top: 0; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (max-width: 480px) {
   .team-acco {
-    margin-top: 9.14286rem; } }
-  @media screen and (max-width: 768px) and (max-width: 480px) {
-    .team-acco {
-      margin-top: 2.85714rem; } }
+    margin-top: 1.42857rem; } }
 
 .team-acco__trigger {
   color: #ffffff;
