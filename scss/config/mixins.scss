@@ -5,7 +5,13 @@
   background-color: $color;
 }
 
-
+@mixin linear-gradient($color1, $color2){
+  background: $color1; /* Old browsers */
+  background: -moz-linear-gradient(top, $color1 0%, $color2 47%, $color1 74%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, $color1 0%,$color2 47%,$color1 74%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, $color1 0%,$color2 47%,$color1 74%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color1', endColorstr='$color1',GradientType=0 ); /* IE6-9 */
+}
 //responsive
 @function rem($px) {
   @return $px / 14px+0rem;

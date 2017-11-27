@@ -1,7 +1,7 @@
 //config
 @import "config/mixins";
 @import "config/variables";
-
+@import "config/normalize.scss";
 //base
 @import "layouts/fonts";
 @import "layouts/base";
@@ -12,6 +12,7 @@
 @import "section/hero";
 @import "section/hamburger";
 @import "section/best";
+@import "section/burger";
 @import "section/team";
 @import "section/reviews";
 @import "section/map";
